@@ -1,0 +1,24 @@
+{
+  "name": "progressive-web-apps-2223",
+  "version": "0.0.1",
+  "description": "The course Progressive Web Apps is about learning to build server side rendered applications. Progressive Web Apps is part of the half year minor programme about Web Design and Development in Amsterdam. Bachelor Communication and Multimedia Design, Amsterdam University of Applied Science.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon scripts/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello-world": "echo \"Hello World\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "progressive-web-apps-2223"
+  },
+  "author": "DragonSake",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
+    "nodemon": "^2.0.21"
+  }
+}

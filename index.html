@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script type="module" src="./scripts/func.js"></script> -->
+  <title>Single Page App</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <figure>
+      <h1>
+        Quote
+      </h1>
+      <blockquote></blockquote>
+      <figcaption></figcaption>
+      <div id="loading">
+        <img src="./images/loading.gif" alt="loading">
+        <p class="loading2">Loading...</p>
+    </div>
+
+      <ul>
+      <li>
+      <button type="button">Previous quote</button>
+    </li>
+    <li>
+      <button type="button">Random quote</button>
+      </li>
+      <li>
+      <button type="button">Next quote</button>
+      </li>
+    </ul>
+  </figure>
+    </section>
+      
+    <section>
+      <input type="search" 
+            id="searchbox" placeholder="Search">
+      <h2 class="h2">10 other quotes</h2>
+      <ul id="quoten">
+      </ul>
+    </section>
+         
+
+  </main>
+
+  <script src="./scripts/js.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/routie/0.3.2/routie.min.js"></script>
+</body>
+
+</html>

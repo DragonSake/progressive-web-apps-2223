@@ -1,0 +1,36 @@
+<%- include('partials/header'); -%>
+
+<main>
+    <section>
+      <figure>
+      <h1>
+        Quote
+      </h1>
+      <blockquote><%= data[0].text %></blockquote>
+      <figcaption>~ <%= data[0].author %></figcaption>
+
+      <ul>
+      <li>
+        <a href="">Previous quote</a>
+    </li>
+    <li>
+      <a href="http://127.0.0.1:3000/random">Random quote</a>
+      </li>
+      <li>
+      <a href="http://127.0.0.1:3000/1">Next quote</a>
+      </li>
+    </ul>
+  </figure>
+    </section>
+      
+    <section>
+      <input type="search" 
+            id="searchbox" placeholder="Search">
+      <h2 class="h2">10 other quotes</h2>
+      <ul id="quoten">
+      </ul>
+    </section>
+         
+
+  </main>
+  <%- include('partials/footer'); -%>
