@@ -12,29 +12,11 @@
         <% }else{ %>
           Onbekend
         <% } %></figcaption>
-      <ul>
-      <li>
-      <a href="">Previous quote</a>
-    </li>
-    <li>
-      <a href="http://127.0.0.1:3000/random">Random quote</a>
-        </li>
-      <li>
-        <a href="">Next quote</a>
-      </li>
-    </ul>
+      <%- include('buttons') -%>
   </figure>
     </section>
-      
-    <section>
-      <input type="search" 
-            id="searchbox" placeholder="Search">
-      <h2 class="h2">10 other quotes</h2>
-      <ul id="quoten">
-      </ul>
-    </section>
-         
-
+        
+    <%- include('listedquotes') -%>
   </main>
 
   <%- include('partials/footer'); -%>
