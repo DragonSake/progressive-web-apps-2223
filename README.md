@@ -231,6 +231,14 @@ gulp.task('pack-css', function () {
 gulp.task('default', gulp.series('pack-js', 'pack-css'));
 ```
 
+Before
+
+![before](https://user-images.githubusercontent.com/40611000/230232485-d9f953e6-352e-477b-90d6-c013a32dcffb.PNG)
+
+After
+
+![after](https://user-images.githubusercontent.com/40611000/230342722-d6168931-82df-40c8-8808-3e6c9c4c175b.PNG)
+
 ***
 
 ### Checklist
