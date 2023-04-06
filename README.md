@@ -1,4 +1,4 @@
-# progressive-web-apps-2223
+# Progressive-web-apps-2223
 The course Progressive Web Apps is about learning to build server side rendered applications. Progressive Web Apps is part of the half year minor programme about Web Design and Development in Amsterdam. Bachelor Communication and Multimedia Design, Amsterdam University of Applied Science.
 
 ***
