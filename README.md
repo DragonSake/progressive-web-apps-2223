@@ -5,16 +5,40 @@ The course Progressive Web Apps is about learning to build server side rendered 
 
 # Table of content
 
-* Installation
-* Activity diagram
-* Server side rendering
-* Manifest
-* Service worker
-* Minify using gulp
-* Checklist
-* License
+* [Installation](#installation)
+* [Activity diagram](#activity-diagram)
+* [Server side rendering](#server-side-rendering)
+* [Manifest](#manifest)
+* [Service worker](#service-worker)
+* [Minify](#minify)
+* [Checklist](#checklist)
+* [License](#license)
 
 ***
+
+# Inhoudsopgave
+
+  * [Installatie](#installatie)
+    + [Clone repository](#clone-repository)
+    + [Install packages](#install-packages)
+    + [Server starten](#server-starten)
+    + [Localhost](#localhost)
+  * [API](#api)
+    + [Welke API heb ik hiervoor gebruikt?](#welke-api-heb-ik-hiervoor-gebruikt-)
+    + [Fetch](#fetch)
+  * [Features](#features)
+    + [Join and leave](#join-and-leave)
+    + [Messages](#messages)
+    + [History](#history)
+    + [Check guess](#check-guess)
+    + [Guessed right champion](#guessed-right-champion)
+    + [New champion](#new-champion)
+    + [Easter egg](#easter-egg)
+  * [API data model](#api-data-model)
+  * [Data flow diagram](#data-flow-diagram)
+  * [MoSCoW](#moscow)
+  * [Bronnen](#bronnen)
+  * [License](#license)
 
 ### Installation
 
