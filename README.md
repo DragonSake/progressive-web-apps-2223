@@ -6,6 +6,10 @@ The course Progressive Web Apps is about learning to build server side rendered 
 # Table of content
 
 * [Installation](#installation)
+   + [Clone repository](#clone-repository)
+   + [Install packages](#install-packages)
+   + [Start server](#start-server)
+   + [Localhost](#localhost)
 * [Activity diagram](#activity-diagram)
 * [Server side rendering](#server-side-rendering)
 * [Manifest](#manifest)
@@ -16,16 +20,43 @@ The course Progressive Web Apps is about learning to build server side rendered 
 
 ***
 
-### Installation
+## Installation
 
-Clone the repository. 
+### Clone repository
 
-Install node and express.
-
-Use npm run build.
+You can install this project on your computer by cloning this repository. You can use GitHub desktop or the terminal to run this following command.
 
 ```
 git clone https://https://github.com/DragonSake/progressive-web-apps-2223.git
+```
+
+### Install packages
+
+After that we have to install we packages. You can do this by running the following commands.
+
+```
+npm install
+```
+
+
+```
+npm install express
+```
+
+### Start server
+
+Now you can start the server on your local dev environment with the following command.
+
+```
+npm run dev
+```
+
+### Localhost
+
+The server shall start on
+
+```
+http://localhost:3000/
 ```
 
 ***
