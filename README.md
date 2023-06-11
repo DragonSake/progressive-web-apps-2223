@@ -1,6 +1,10 @@
 # Progressive-web-apps-2223
 The course Progressive Web Apps is about learning to build server side rendered applications. Progressive Web Apps is part of the half year minor programme about Web Design and Development in Amsterdam. Bachelor Communication and Multimedia Design, Amsterdam University of Applied Science.
 
+For Progressive web apps I made a web app that shows quotes. When you land on the website, you will see the first quote in the array. There are also 10 other quotes on the side. It also contains buttons to navigate to other quotes. I have a next button where you go to the next quote in the array and a button that gives a random quote, but the random button is still in progress.
+
+Live demo: https://pwa.dragonsake.repl.co/
+
 ***
 
 # Table of content
@@ -285,6 +289,29 @@ After
 
 ***
 
+### Sources
+
+* https://nodejs.org/en/docs/guides/getting-started-guide
+* https://expressjs.com/en/starter/installing.html
+* https://www.npmjs.com/package/node-fetch
+* https://dev.to/yogesnsamy/how-to-add-custom-css-javascript-files-to-an-expressjs-app-48cp
+* https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+* https://stackoverflow.com/questions/18629327/adding-css-file-to-ejs
+* https://stackoverflow.com/questions/15350025/express-js-single-routing-handler-for-multiple-routes-in-a-single-line
+* https://web.dev/learn/pwa/service-workers/
+* https://www.youtube.com/watch?v=6s697AJdlB8
+* https://stackoverflow.com/questions/8216918/can-i-use-conditional-statements-with-ejs-templates-in-jmvc
+* https://app-manifest.firebaseapp.com/
+* https://www.simicart.com/manifest-generator.html/
+* https://manifest-gen.netlify.app/
+* https://www.w3schools.com/howto/howto_html_favicon.asp#:~:text=A%20favicon%20is%20a%20small,like%20https%3A%2F%2Ffavicon.cc.
+* https://developer.chrome.com/docs/workbox/caching-strategies-overview/
+* https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers#lifecycle_of_a_service_worker
+* https://stackoverflow.com/questions/64483524/service-worker-not-returning-custom-offline-page-it-is-instead-returning-the-def
+* https://gulpjs.com/docs/en/getting-started/quick-start/
+
+***
+
 ### License
 
-MIT
+MIT License
