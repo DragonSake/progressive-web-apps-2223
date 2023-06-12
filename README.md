@@ -16,8 +16,8 @@ Live demo: https://pwa.dragonsake.repl.co/
    + [Localhost](#localhost)
 * [Activity diagram](#activity-diagram)
 * [Server side rendering](#server-side-rendering)
-* [Manifest](#manifest)
 * [Service worker](#service-worker)
+* [Manifest](#manifest)
 * [Minify](#minify)
 * [Checklist](#checklist)
 * [License](#license)
@@ -167,47 +167,6 @@ app.get('/random', async function(req, res) {
 
 ***
 
-### Manifest
-
-To give a web browser or web app information about an application's metadata, I used a manifest. It helps define how the web app appears when it is downloaded and used as a standalone application.
-
-```JSON
-{
-  "name": "Single Page App",
-  "short_name": "SPA",
-  "start_url": "/",
-  "display" : "standalone",
-  "theme_color" : "#ffed00",
-  "background_color" : "#ffffff",
-
-  "icons": [
-  {
-    "src": "/images/icon-192x192.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  },
-  {
-    "src": "/images/icon-256x256.png",
-    "type": "image/png",
-    "sizes": "256x256"
-  },
-  {
-    "src": "/images/icon-384x384.png",
-    "type": "image/png",
-    "sizes": "384x384"
-  }
-  ,
-  {
-    "src": "/images/icon-512x512.png",
-    "type": "image/png",
-    "sizes": "512x512"
-  }
-]
-}
-```
-
-***
-
 ### Service worker
 
 If you enter my website for the first time. It saves the data in the cache. So the next time if you load my website with no wifi, you can still see the first quote. If your internet stopped working and you try to load a page where you haven't been before, you will see the offline page. In order to do that, I used this code:
@@ -276,6 +235,47 @@ self.addEventListener("fetch", (event) => {
 });
 
 
+```
+
+***
+
+### Manifest
+
+To give a web browser or web app information about an application's metadata, I used a manifest. It helps define how the web app appears when it is downloaded and used as a standalone application.
+
+```JSON
+{
+  "name": "Single Page App",
+  "short_name": "SPA",
+  "start_url": "/",
+  "display" : "standalone",
+  "theme_color" : "#ffed00",
+  "background_color" : "#ffffff",
+
+  "icons": [
+  {
+    "src": "/images/icon-192x192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+  {
+    "src": "/images/icon-256x256.png",
+    "type": "image/png",
+    "sizes": "256x256"
+  },
+  {
+    "src": "/images/icon-384x384.png",
+    "type": "image/png",
+    "sizes": "384x384"
+  }
+  ,
+  {
+    "src": "/images/icon-512x512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }
+]
+}
 ```
 
 ***
