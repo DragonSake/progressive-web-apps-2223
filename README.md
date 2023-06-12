@@ -67,7 +67,7 @@ http://localhost:3000/
 
 ### Activity diagram
 
-
+To make the web app easier to understand, I used an activity diagram. These are like flowcharts with pictures and lines that shows the steps. 
 
 When a client is using this in his/her web browser, it's doing a GET request to retrieve information from a server. When it gets rejected, you will see an offline page. If it's accepted, you will see the page in it's ideal state. If you click on next quote, it goes to the next quote. When you suddenly have no internet anymore, it will check if the page is cached or not.
 
