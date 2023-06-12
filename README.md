@@ -169,6 +169,8 @@ app.get('/random', async function(req, res) {
 
 ### Service worker
 
+To make sure that a web application is still be accessible and function even when the user is offline or has a weak network connection, I used the caching using a service worker. By caching web app assets like HTML, CSS, JavaScript, and images, the service worker allows the web app to store and retrieve these data, enabling offline access and improved performance.
+
 If you enter my website for the first time. It saves the data in the cache. So the next time if you load my website with no wifi, you can still see the first quote. If your internet stopped working and you try to load a page where you haven't been before, you will see the offline page. In order to do that, I used this code:
 
 ```JS
