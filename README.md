@@ -178,7 +178,7 @@ app.get('/random', async function(req, res) {
 
 ## Critical rendering path
 
-To enhance the performance, offline functionality, and user experience of the web application, I used several techniques. By using these techniques, I wanted to optimize the critical rendering path, resulting in a faster-loading web application, improved offline functionality and an overall enhanced user experience. The techniques I used:
+To enhance the performance, offline functionality and user experience of the web application, I used several techniques. By using these techniques, I wanted to optimize the critical rendering path, resulting in a faster-loading web application, improved offline functionality and an overall enhanced user experience. The techniques I used:
 
 ### Service worker
 
