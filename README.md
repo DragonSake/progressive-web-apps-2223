@@ -84,46 +84,83 @@ Express
 To start the server I used express with the following code.
 
 ```JS
-import express from 'express';
-import fetch from 'node-fetch';
+const http = require('http');
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
-const app = express();
-
-app.set('view engine', 'ejs');
-app.set('views', 'views');
-
-app.use( express.static( "public" ) );
-
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
 });
 
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+```
+
+Fetch
+
+I used this code to fetch data.
+
+```JS
+import fetch from 'node-fetch';
+```
+
+EJS
+
+To create partials I used EJS with the following code. I used this because, it's like a template. This way I can reuse the code.
+
+```JS
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single Page App</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+```
+
+```JS
+<footer>
+    <p>© 2023 Tingting Li</p>
+  </footer>
+  </body>
+  
+  </html>
+```
+
+Adding CSS to EJS
+
+To tell express.js to make files in the public folder accessible to clients, I used this code. This way they can view files like HTML, CSS, images, etc. when they access the application.
+
+```JS
+app.use( express.static( "public" ) );
+```
+
+Different routes
+
+To create a website using node.js and express.js, I used the following code.
+
+I set up different routes for different URLs using the app.get() function. For the main page ("/"), I rendered the "index" template and passed data to it. For the URL "/1", I rendered the "next" template and also passed data to it.
+For the "/random" URL, I rendered the "random" template and passed the data to it. These templates allow me to create dynamic web pages that can show different content based on the data I give.
+
+```JS
 app.get('/', async function(req, res) {
   res.render('index', {data});
 });
 
-app.get('/next', async function(req, res) {
-  index++;
-  console.log(index);
-  const quote = data[index % data.length];
-  res.render('next', {data, quote});
+app.get('/1', async function(req, res) {
+  res.render('next', {data});
 });
 
 app.get('/random', async function(req, res) {
-  const result = filterData(data);
-  res.render('random', {data, result});
-});
-
-app.get('/previous', async function(req, res) {
-  const result = filterData(data);
-  res.render('previous', {data, result});
-});
-
-app.get('/offline', async function(req, res) {
-  res.render('offline');
+  res.render('random', {data});
 });
 ```
 
@@ -244,9 +281,7 @@ self.addEventListener("fetch", (event) => {
 
 ### Minify
 
-Reasons to minify
-* It reduces the file size. (It removes unnessesary characters from the code. Such as white space.)
-* It improves website speed.
+To reduce file size, improve website speed, I used minify. This removes unnecessary characters like white spaces from the code. I used a tool called Gulp, which automates various tasks, including minifying and optimizing JavaScript and CSS files, resulting in smaller and faster files for the web application.
 
 ```JS
 import gulp from 'gulp';
