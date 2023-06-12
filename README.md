@@ -160,7 +160,8 @@ app.get('/1', async function(req, res) {
 });
 
 app.get('/random', async function(req, res) {
-  res.render('random', {data});
+  const counter = Math.floor(Math.random() * data.length);
+  res.render('random', {data, counter});
 });
 ```
 
