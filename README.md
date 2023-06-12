@@ -79,6 +79,10 @@ If it's cached, you will see the page. If it's not cached, you will see a 404 pa
 
 ### Server side rendering
 
+Express
+
+To start the server I used express with the following code.
+
 ```JS
 import express from 'express';
 import fetch from 'node-fetch';
