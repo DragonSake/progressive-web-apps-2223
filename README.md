@@ -67,17 +67,11 @@ http://localhost:3000/
 
 ### Activity diagram
 
-When a client is using this in his/her web browser, it's doing a GET request to retrieve information from a server. 
 
-When it gets rejected, you will see an offline page. 
 
-If it's accepted, you will see the page in it's ideal state. If you click on next quote, it goes to the next quote.
+When a client is using this in his/her web browser, it's doing a GET request to retrieve information from a server. When it gets rejected, you will see an offline page. If it's accepted, you will see the page in it's ideal state. If you click on next quote, it goes to the next quote. When you suddenly have no internet anymore, it will check if the page is cached or not.
 
-When you suddenly have no internet anymore, it will check if the page is cached or not.
-
-If it's cached, you will see the page.
-
-If it's not cached, you will see a 404 page not found and the 10 quotes on the right will not show.
+If it's cached, you will see the page. If it's not cached, you will see a 404 page not found and the 10 quotes on the right will not show.
 
 ![AD](https://user-images.githubusercontent.com/40611000/230353669-0726e5f6-dc12-4b64-9ae8-aaea39690bff.jpg)
 
