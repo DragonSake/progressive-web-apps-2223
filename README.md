@@ -16,9 +16,10 @@ Live demo: https://pwa.dragonsake.repl.co/
    + [Localhost](#localhost)
 * [Activity diagram](#activity-diagram)
 * [Server side rendering](#server-side-rendering)
-* [Service worker](#service-worker)
-* [Manifest](#manifest)
-* [Minify](#minify)
+* [Critical rendering path](#critical-rendering-path)
+   + [Service worker](#service-worker)
+   + [Manifest](#manifest)
+   + [Minify](#minify)
 * [Checklist](#checklist)
 * [License](#license)
 
@@ -65,7 +66,7 @@ http://localhost:3000/
 
 ***
 
-### Activity diagram
+## Activity diagram
 
 To make the web app easier to understand, I used an activity diagram. These are like flowcharts with pictures and lines that shows the steps. 
 
@@ -77,9 +78,9 @@ If it's cached, you will see the page. If it's not cached, you will see a 404 pa
 
 ***
 
-### Server side rendering
+## Server side rendering
 
-Express
+### Express
 
 To start the server I used express with the following code.
 
@@ -100,7 +101,7 @@ server.listen(port, hostname, () => {
 });
 ```
 
-Fetch
+### Fetch
 
 I used this code to fetch data.
 
@@ -108,7 +109,7 @@ I used this code to fetch data.
 import fetch from 'node-fetch';
 ```
 
-EJS
+### EJS
 
 To create partials I used EJS with the following code. I used this because, it's like a template. This way I can reuse the code.
 
@@ -135,7 +136,7 @@ To create partials I used EJS with the following code. I used this because, it's
   </html>
 ```
 
-Adding CSS to EJS
+### Adding CSS to EJS
 
 To tell express.js to make files in the public folder accessible to clients, I used this code. This way they can view files like HTML, CSS, images, etc. when they access the application.
 
@@ -143,7 +144,8 @@ To tell express.js to make files in the public folder accessible to clients, I u
 app.use( express.static( "public" ) );
 ```
 
-Different routes
+
+### Different routes
 
 To create a website using node.js and express.js, I used the following code.
 
@@ -166,6 +168,8 @@ app.get('/random', async function(req, res) {
 ```
 
 ***
+
+## Critical rendering path
 
 ### Service worker
 
@@ -314,17 +318,17 @@ gulp.task('pack-css', function () {
 gulp.task('default', gulp.series('pack-js', 'pack-css'));
 ```
 
-Before
+### Before
 
 ![before](https://user-images.githubusercontent.com/40611000/230232485-d9f953e6-352e-477b-90d6-c013a32dcffb.PNG)
 
-After
+### After
 
 ![after](https://user-images.githubusercontent.com/40611000/230342722-d6168931-82df-40c8-8808-3e6c9c4c175b.PNG)
 
 ***
 
-### Checklist
+## Checklist
 
 - [x] Activity diagram
 - [x] Server side
@@ -337,7 +341,7 @@ After
 
 ***
 
-### Sources
+## Sources
 
 * https://nodejs.org/en/docs/guides/getting-started-guide
 * https://expressjs.com/en/starter/installing.html
@@ -360,6 +364,6 @@ After
 
 ***
 
-### License
+## License
 
 MIT License
