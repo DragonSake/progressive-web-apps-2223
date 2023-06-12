@@ -178,6 +178,8 @@ app.get('/random', async function(req, res) {
 
 ## Critical rendering path
 
+To enhance the performance, offline functionality, and user experience of the web application, I used several techniques. By using these techniques, I wanted to optimize the critical rendering path, resulting in a faster-loading web application, improved offline functionality and an overall enhanced user experience. The techniques I used:
+
 ### Service worker
 
 To make sure that a web application is still be accessible and function even when the user is offline or has a weak network connection, I used the caching using a service worker. By caching web app assets like HTML, CSS, JavaScript, and images, the service worker allows the web app to store and retrieve these data, enabling offline access and improved performance.
