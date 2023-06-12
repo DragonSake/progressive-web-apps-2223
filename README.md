@@ -131,7 +131,7 @@ app.get('/offline', async function(req, res) {
 
 ### Manifest
 
-A manifest provides information to a web browser or a web app about the application's metadata. It is used to define the web's appearance when it is downloaded as a standalone app.
+To give a web browser or web app information about an application's metadata, I used a manifest. It helps define how the web app appears when it is downloaded and used as a standalone application.
 
 ```JSON
 {
