@@ -361,7 +361,7 @@ gulp.task('default', gulp.series('pack-js', 'pack-css'));
 * https://app-manifest.firebaseapp.com/
 * https://www.simicart.com/manifest-generator.html/
 * https://manifest-gen.netlify.app/
-* https://www.w3schools.com/howto/howto_html_favicon.asp#:~:text=A%20favicon%20is%20a%20small,like%20https%3A%2F%2Ffavicon.cc.
+* https://www.w3schools.com/howto/howto_html_favicon.asp#:~:text=A%20favicon%20is%20a%20small,like%20https%3A%2F%2Ffavicon.cc
 * https://developer.chrome.com/docs/workbox/caching-strategies-overview/
 * https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers#lifecycle_of_a_service_worker
 * https://stackoverflow.com/questions/64483524/service-worker-not-returning-custom-offline-page-it-is-instead-returning-the-def
