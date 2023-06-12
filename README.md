@@ -36,7 +36,7 @@ Live demo: https://pwa.dragonsake.repl.co/
 
 ### Clone repository
 
-You can install this project on your computer by cloning this repository. You can use GitHub desktop or the terminal to run this following command.
+You can install this project on your computer by cloning this repository. You can use GitHub desktop or the terminal to run this following command:
 
 ```
 git clone https://https://github.com/DragonSake/progressive-web-apps-2223.git
@@ -44,7 +44,7 @@ git clone https://https://github.com/DragonSake/progressive-web-apps-2223.git
 
 ### Install packages
 
-After that we have to install we packages. You can do this by running the following commands.
+After that we have to install we packages. You can do this by running the following commands:
 
 ```
 npm install
@@ -57,7 +57,7 @@ npm install express
 
 ### Start server
 
-Now you can start the server on your local dev environment with the following command.
+Now you can start the server on your local dev environment with the following command:
 
 ```
 npm run dev
@@ -65,7 +65,7 @@ npm run dev
 
 ### Localhost
 
-The server shall start on
+The server shall start on:
 
 ```
 http://localhost:3000/
@@ -89,7 +89,7 @@ If it's cached, you will see the page. If it's not cached, you will see a 404 pa
 
 ### Express
 
-To start the server I used express with the following code.
+To start the server I used express with the following code:
 
 ```JS
 const http = require('http');
@@ -110,7 +110,7 @@ server.listen(port, hostname, () => {
 
 ### Fetch
 
-I used this code to fetch data.
+I used this code to fetch data:
 
 ```JS
 import fetch from 'node-fetch';
@@ -184,7 +184,7 @@ To enhance the performance, offline functionality and user experience of the web
 
 To make sure that a web application is still be accessible and function even when the user is offline or has a weak network connection, I used the caching using a service worker. By caching web app assets like HTML, CSS, JavaScript, and images, the service worker allows the web app to store and retrieve these data, enabling offline access and improved performance.
 
-If you enter my website for the first time. It saves the data in the cache. So the next time if you load my website with no wifi, you can still see the first quote. If your internet stopped working and you try to load a page where you haven't been before, you will see the offline page. In order to do that, I used this code.
+If you enter my website for the first time. It saves the data in the cache. So the next time if you load my website with no wifi, you can still see the first quote. If your internet stopped working and you try to load a page where you haven't been before, you will see the offline page. In order to do that, I used this code:
 
 ```JS
 const CACHE_NAME = 'cash';
