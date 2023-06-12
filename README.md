@@ -243,8 +243,6 @@ self.addEventListener("fetch", (event) => {
 
 ```
 
-***
-
 ### Manifest
 
 To give a web browser or web app information about an application's metadata, I used a manifest. It helps define how the web app appears when it is downloaded and used as a standalone application.
@@ -283,8 +281,6 @@ To give a web browser or web app information about an application's metadata, I 
 ]
 }
 ```
-
-***
 
 ### Minify
 
